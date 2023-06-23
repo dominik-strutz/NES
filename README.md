@@ -2,7 +2,7 @@
 [**Neural Eikonal Solver (NES)**](https://github.com/sgrubas/NES) is framework for solving factored eikonal equation using physics-informed neural network, for details see our paper: [early arXiv version](https://arxiv.org/abs/2205.07989) and [published final version](https://doi.org/10.1016/j.jcp.2022.111789). **NES** can simulate traveltimes of seismic waves in complex inhomogeneous velocity models.
 
 ## Description
-See quick introduction on [Google Colab](https://colab.research.google.com/github/sgrubas/NES/blob/main/notebooks/NES_Introduction.ipynb)
+See quick introduction on [Google Colab](https://colab.research.google.com/github/dstrutz/NES/blob/main/notebooks/NES_Introduction.ipynb)
 
 NES has two solvers:
 1.   **One-Point NES (NES-OP)** is to solve conventional one-point eikonal ([NES-OP tutorial](https://github.com/sgrubas/NES/blob/main/notebooks/NES-OP_Tutorial.ipynb))
