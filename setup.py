@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 NAME            = "NES"
 VERSION         = "0.2.0"
 DESCRIPTION     = "Neural Eikonal Solver: Framework for solving the eikonal equation using neural networks"
-URL             = "https://github.com/dstrutzNES"
+URL             = "https://github.com/dstrutz/NES"
 LICENSE         = "MIT"
 AUTHOR          = "Serafim Grubas, Nikolay Shilov, Anton Duchkov, Georgy Loginov"
 EMAIL           = "serafimgrubas@gmail.com"
