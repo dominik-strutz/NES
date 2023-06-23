@@ -301,7 +301,7 @@ class NES_OP:
                 **kwargs : keyword arguments : Arguments for 'tf.keras.models.Model.compile(**kwargs)'
         """
         if optimizer is None:
-          lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
+            lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
                 initial_learning_rate=lr,
                 decay_steps=1,
                 decay_rate=decay)
