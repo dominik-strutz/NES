@@ -1,15 +1,15 @@
 # Neural Eikonal Solver
-[**Neural Eikonal Solver (NES)**](https://github.com/sgrubas/NES) is framework for solving factored eikonal equation using physics-informed neural network, for details see our paper: [early arXiv version](https://arxiv.org/abs/2205.07989) and [published final version](https://doi.org/10.1016/j.jcp.2022.111789). **NES** can simulate traveltimes of seismic waves in complex inhomogeneous velocity models.
+[**Neural Eikonal Solver (NES)**](https://github.com/dstrutzNES) is framework for solving factored eikonal equation using physics-informed neural network, for details see our paper: [early arXiv version](https://arxiv.org/abs/2205.07989) and [published final version](https://doi.org/10.1016/j.jcp.2022.111789). **NES** can simulate traveltimes of seismic waves in complex inhomogeneous velocity models.
 
 ## Description
 See quick introduction on [Google Colab](https://colab.research.google.com/github/dstrutz/NES/blob/main/notebooks/NES_Introduction.ipynb)
 
 NES has two solvers:
-1.   **One-Point NES (NES-OP)** is to solve conventional one-point eikonal ([NES-OP tutorial](https://github.com/sgrubas/NES/blob/main/notebooks/NES-OP_Tutorial.ipynb))
+1.   **One-Point NES (NES-OP)** is to solve conventional one-point eikonal ([NES-OP tutorial](https://github.com/dstrutzNES/blob/main/notebooks/NES-OP_Tutorial.ipynb))
 
 $$\Vert \nabla \tau(\textbf{x}) \Vert = \frac{1}{v(\textbf{x})}$$
 
-3.   **Two-Point NES (NES-TP)** is to solve generalized two-point eikonal ([NES-TP tutorial](https://github.com/sgrubas/NES/blob/main/notebooks/NES-TP_Tutorial.ipynb))
+3.   **Two-Point NES (NES-TP)** is to solve generalized two-point eikonal ([NES-TP tutorial](https://github.com/dstrutzNES/blob/main/notebooks/NES-TP_Tutorial.ipynb))
 
 $$\Vert \nabla_r T(\textbf{x}_s, \textbf{x}_r) \Vert = \frac{1}{v(\textbf{x}_r)}$$
 
@@ -24,11 +24,11 @@ So far, NES outperforms all existing neural-network based solutions. Table shows
 |**NES-TP** (ours)  	|**0.4**   	|**300**   	|**51308**   	|
 |[EikoNet](https://doi.org/10.1109/TGRS.2020.3039165)   	|5.4   	|9600  	|7913249   	|
 
-For detailed comparisons see our colab notebooks [EikoNet](https://github.com/sgrubas/NES/blob/main/notebooks/EikoNet_NES-TP_Marmousi.ipynb) and [PINNeik](https://github.com/sgrubas/NES/blob/main/notebooks/PINNeik_NES-OP_Marmousi.ipynb).
+For detailed comparisons see our colab notebooks [EikoNet](https://github.com/dstrutzNES/blob/main/notebooks/EikoNet_NES-TP_Marmousi.ipynb) and [PINNeik](https://github.com/dstrutzNES/blob/main/notebooks/PINNeik_NES-OP_Marmousi.ipynb).
 
 ## Installation
 ```python
-pip install git+https://github.com/sgrubas/NES.git
+pip install git+https://github.com/dstrutzNES.git
 ```
 
 # Quick example
@@ -49,11 +49,11 @@ T = Eik.Traveltime(X)
 # 2D examples of NES-OP
 Isochrones of solutions. RMAE is shown above each figure. The NES solutions are *white dashed isochrones*, the reference solutions are *black isochrones*. 
 
-<img src="https://github.com/sgrubas/NES/blob/main/NES/data/NES_OP_Sinus_0.06.png" alt="0.06%" width="400"/> <img src="https://github.com/sgrubas/NES/blob/main/NES/data/NES_OP_GaussianPlus_0.12.png" alt="0.12%" width="400"/>
+<img src="https://github.com/dstrutzNES/blob/main/NES/data/NES_OP_Sinus_0.06.png" alt="0.06%" width="400"/> <img src="https://github.com/dstrutzNES/blob/main/NES/data/NES_OP_GaussianPlus_0.12.png" alt="0.12%" width="400"/>
 
-<img src="https://github.com/sgrubas/NES/blob/main/NES/data/NES_OP_Flower_0.42.png" alt="0.42%" width="400"/> <img src="https://github.com/sgrubas/NES/blob/main/NES/data/NES_OP_Boxes_0.28.png" alt="0.28%" width="400"/>
+<img src="https://github.com/dstrutzNES/blob/main/NES/data/NES_OP_Flower_0.42.png" alt="0.42%" width="400"/> <img src="https://github.com/dstrutzNES/blob/main/NES/data/NES_OP_Boxes_0.28.png" alt="0.28%" width="400"/>
 
-<img src="https://github.com/sgrubas/NES/blob/main/NES/data/NES_OP_Layered_0.33.png" alt="0.33%" width="400"/> <img src="https://github.com/sgrubas/NES/blob/main/NES/data/NES_OP_LayeredBoxGauss_0.34.png" alt="0.34%" width="400"/>
+<img src="https://github.com/dstrutzNES/blob/main/NES/data/NES_OP_Layered_0.33.png" alt="0.33%" width="400"/> <img src="https://github.com/dstrutzNES/blob/main/NES/data/NES_OP_LayeredBoxGauss_0.34.png" alt="0.34%" width="400"/>
 
 # Citation
 If you find NES useful for your research, please cite our paper:

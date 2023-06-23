@@ -66,7 +66,7 @@ munkres==1.1.4
 nbclient 
 nbconvert
 nbformat 
-NES @ git+https://github.com/sgrubas/NES.git
+NES @ git+https://github.com/dstrutzNES.git
 nest-asyncio 
 notebook 
 numexpr 
